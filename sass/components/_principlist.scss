@@ -1,0 +1,38 @@
+.second-title {
+    margin-bottom: 50px;
+    padding-top: 0;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    }
+    
+   .principlist__title {
+       margin-bottom: 10px;
+      text-transform: uppercase;
+      color: var(--black);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+   }
+  
+   .principlist, .work-list {
+       display: flex;
+       }
+  .principlist__subtitle {
+      display: block;
+      width: 270px;
+         }
+    .principlist .principlist__subtitle + .principlist__subtitle {
+      margin-left: 30px;
+     }
+     .principlist__icon-box {
+        display: flex;
+        height: 120px;
+        width: 270px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(245, 244, 250, 1);
+        margin-bottom: 30px;   
+    }

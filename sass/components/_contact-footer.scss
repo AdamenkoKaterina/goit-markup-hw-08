@@ -1,0 +1,19 @@
+.contacts__addres {
+    display: flex;
+    margin-bottom: 9px;
+    color: var(--white);
+    text-decoration: none; 
+    font-style: normal;
+    line-height: 1.71;
+}
+ .contacts__mail, 
+.contacts__tel {
+   display: flex;  
+   color: rgba(255, 255, 255, 0.6); 
+   text-decoration: none; 
+   font-style: normal;
+}
+.contacts__mail {
+    display: flex; 
+    margin-bottom: 9px;
+}
