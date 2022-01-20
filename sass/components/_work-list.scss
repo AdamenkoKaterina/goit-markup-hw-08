@@ -1,13 +1,21 @@
+.title {
+    @media screen and (max-width:1199px) {
+      display: none;  
+    }
+}
 .work-list .work-list__foto+.work-list__foto {
     margin-left: 30px;
 }
 .work-list__image {
     position: relative;
+   /* display: block;*/
+    max-width: 100%;
+    height: auto;
 }
 .work-list__descript {
     position: absolute;
     bottom: 0;
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
     width: 370px;

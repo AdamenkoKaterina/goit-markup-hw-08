@@ -1,14 +1,11 @@
 .site-nav {
-    display: flex;
+  display: none;
+   /* display: flex;*/
     margin-left: 93px;
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.site-nav {
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    }
+
 .site-nav .site-nav__item + .site-nav__item {
     margin-left: 50px;
   }
@@ -26,7 +23,7 @@ transition: var(--animation-transition);
 }
 &--active::after {
     content: "";
-    display: block;
+  display: block;
     position: relative;
     top: 28px;
     bottom: 0;

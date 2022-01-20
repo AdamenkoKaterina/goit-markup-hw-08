@@ -1,5 +1,5 @@
 .contacts__addres {
-    display: flex;
+   /* display: flex;*/
     margin-bottom: 9px;
     color: var(--white);
     text-decoration: none; 
@@ -8,12 +8,12 @@
 }
  .contacts__mail, 
 .contacts__tel {
-   display: flex;  
+  /* display: flex;  */
    color: rgba(255, 255, 255, 0.6); 
    text-decoration: none; 
    font-style: normal;
 }
 .contacts__mail {
-    display: flex; 
+   /* display: flex; */
     margin-bottom: 9px;
 }
