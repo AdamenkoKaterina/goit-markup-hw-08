@@ -1,0 +1,29 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    }
+.filter .filter__block + .filter__block {
+        margin-left: 8px;
+      }
+.filter__button {
+padding: 6px 22px;
+border: none;
+border-radius: 4px;
+font-family: Roboto;   
+ cursor: pointer;
+ color: var(--black);
+ background: var(--light-background);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6; 
+text-align: center;
+letter-spacing: 0.03em;
+transition: var(--animation-transition);
+
+&:hover,
+&:focus {
+    color: var(--white);
+    background: var(--accent-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}}
