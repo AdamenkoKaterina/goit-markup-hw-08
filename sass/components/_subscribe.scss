@@ -1,9 +1,8 @@
 /*.subscribe {
-    display: flex;
-    margin-top: 12px;
-    margin-right: 0;
-    
-}
+    @media screen and (min-width: 1199px) {
+     display: flex;   
+    }
+    }*/
 .subscribe__title {
     font-size: 14px;
     font-weight: 700;
@@ -13,9 +12,11 @@
     margin-bottom: 20px;
  }
  .subscribe__form {
-   margin-left: 93px;
-   
- }
+   /*margin-left: 93px;*/
+   @media screen and (min-width: 768px) {
+    margin-top: 60px;
+}
+    }
  .subscribe__form input {
      display: flex;
     width: 358px;
@@ -39,7 +40,7 @@
     display: flex;
     width: 200px;
     height: 50px;
-    margin-top: 37px;
+    margin-top: 20px;
     margin-right: 0;
     margin-left: 12px;
     padding-left: 29px;
@@ -56,4 +57,4 @@
 }
 .subscribe__footer-icon {
     margin-left: 10px;
-    }*/
+    }
