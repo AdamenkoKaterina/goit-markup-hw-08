@@ -9,7 +9,8 @@
     }
     
    .principlist__title {
-       margin-bottom: 10px;
+     margin-top: 30px;
+    margin-bottom: 10px;
       text-transform: uppercase;
       color: var(--black);
       font-weight: 700;
@@ -18,42 +19,35 @@
       text-align: center;
    }
   
-  /* .principlist, .work-list {
+   /*.principlist, .work-list {
        
        }*/
    .principlist {
-      
+         
     @media screen and (min-width: 768px) {
       display: flex;    
       flex-wrap: wrap;
+      
       margin-left: -30px;
       margin-bottom: -30px;
-      
-    }  
+      }  
    }    
   .principlist__subtitle {
-    margin-top: 30px;
-    margin-bottom: 30px;  
-    justify-content: center;
-    align-items: center;
-      
-      @media screen and (min-width: 768px) {
-       flex-basis: calc((100%-60px) / 2);
-       margin-left: 30px;
+             @media screen and (min-width: 768px) {
+      margin-left: 30px;
        margin-bottom: 30px;
-        
+       flex-basis: calc((100%-60px) / 2);
+            
       }      
     
     }
     
      .principlist__icon-box {
-       /*display: flex;*/
+       display: flex;
         height: 120px;
         justify-content: center;
         align-items: center;
         background-color: rgba(245, 244, 250, 1);
          
-        @media screen and (min-width: 768px) {
-             
-         }
+        
     }
