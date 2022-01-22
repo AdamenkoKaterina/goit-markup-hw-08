@@ -5,6 +5,21 @@
     padding-top: 32px;
     padding-bottom: 32px;
 }
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.menu-button .is-open .menu-button__close {
+  display: block;
+} 
+.menu-button .is-open .menu-button__menu {
+  display: none;
+} 
+.menu-button__close {
+  display: none;
+}
 
 .site-nav .site-nav__item + .site-nav__item {
     margin-left: 50px;
