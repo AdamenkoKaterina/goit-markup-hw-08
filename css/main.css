@@ -112,6 +112,10 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /*.site-nav {
@@ -122,6 +126,7 @@ body {
     padding-bottom: 32px;
 }*/
 .menu-button {
+  z-index: 2;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -146,10 +151,12 @@ body {
 
 .menu-container {
   display: none;
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
+  background-color: white;
 }
 
 .menu-container.is-open {
