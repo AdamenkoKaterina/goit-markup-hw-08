@@ -1,7 +1,8 @@
 .networks {
   display: flex;
-  
-   }
+  justify-content: center;
+  }
+
 .networks__link {
     display: flex;
     height: 44px;
@@ -40,10 +41,9 @@
     margin-bottom: 20px;
 }
 .networks-box {
-   margin-top: 60px;
-   margin-bottom: 60px;
-
-   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-right: 89px;
-}
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    margin-top: 12px;
+        }
+  
 }
