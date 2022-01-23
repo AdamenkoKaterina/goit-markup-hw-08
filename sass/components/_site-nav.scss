@@ -1,17 +1,21 @@
-/*.site-nav {
-  display: none;
+.site-nav {
+  @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 93px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}*/
+      }
+ 
+}
 .menu-button {
-  z-index: 2;
+  @media screen and (max-width: 767px) {
+  z-index: 3;
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
-  background-color: transparent;
+  background-color: transparent;  
+    }
+    @media screen and (min-width: 768px) {
+    display: none;    
+    }
 }
 
 .menu-button .menu-button__close {
@@ -24,7 +28,8 @@
   display: none;
 }
 .menu-container {
-  display: none;
+  @media screen and (max-width: 767px) {
+   display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -32,19 +37,36 @@
   height: 100%;
   background-color: white;
 
-  
   &.is-open {
     display: block;
-  }
+  }    
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;   
+      align-items: center;  
+      align-content: center;
+      justify-content: space-between;  
+    }
+}
+.navigation {
+  @media screen and (max-width: 767px) {
+    margin-left: 40px;     
+    }
+   }
+.site-nav__item {
+  margin-top: 32px;
 }
 .site-nav .site-nav__item + .site-nav__item {
-    margin-left: 50px;
+  @media screen and (min-width: 768px) {
+    margin-left: 50px;     
+    }
   }
-.site-nav__link{
-  font-size: 14px; 
+
+.site-nav__link {
+ font-size: 40px;
 color:var(--black); 
 font-weight: 500;
-line-height: 1.14;
+line-height: 1.17;
 letter-spacing: 0.02em; 
 text-decoration: none; 
 transition: var(--animation-transition);
@@ -54,6 +76,12 @@ transition: var(--animation-transition);
 }
 &--active::after {
     content: "";
+  color: var(--accent-color);
+ } 
+  @media screen and (min-width: 768px) {
+    font-size: 14px;    
+  &--active::after {
+    content: "";
   display: block;
     position: relative;
     top: 28px;
@@ -62,5 +90,6 @@ transition: var(--animation-transition);
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 4px;
+} 
 }
 }
